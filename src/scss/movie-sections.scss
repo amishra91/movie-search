@@ -1,0 +1,12 @@
+.section-heading {
+  color: $text-color-grey;
+  position: relative;
+  &:before {
+    content: '';
+    width: 40px;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    border-bottom: 1px solid $text-color-grey;
+  }
+}

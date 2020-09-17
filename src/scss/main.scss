@@ -1,0 +1,18 @@
+@import './variables.scss';
+@import './header.scss';
+@import './movie-sections.scss';
+@import './card.scss';
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $background-color-dark;
+}
+.container {
+  width: 100%;
+}
+.wrapper {
+  padding: 20px 40px;
+}
