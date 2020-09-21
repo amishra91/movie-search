@@ -15,6 +15,7 @@ const Popularmovies = (props) => {
                     poster={movie.poster_path} 
                     baseImageUrl={props.baseImageUrl}
                     description={movie.overview}
+                    id={movie.id}
                     releaseDate={movie.release_date ? movie.release_date.substring(0, movie.release_date.indexOf('-')): 'NA'}
                     />
             )

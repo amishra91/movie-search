@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Card = (props) => {
   return(
     <div className="card-wrapper">
+      <Link to={`/details/${props.type}/${props.id}`} className="details-link">
       <div className="card">
         <div className="card-img-wrapper">
           <img src={`${props.baseImageUrl}${props.poster}`} alt={props.name} className="poster-img" />
@@ -16,6 +18,7 @@ const Card = (props) => {
           }
         </div>
       </div>
+      </Link>
     </div>
   )
 }
